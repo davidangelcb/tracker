@@ -1,0 +1,34 @@
+.contact-modal-container .close-btn {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.contact-modal-container h4 {
+  font-size: 16px;
+  color: #241D5D;
+}
+
+.contact-modal-container p {
+  font-size: 16px;
+  color: #4F4F4F;
+}
+
+.contact-modal-container p span {
+  color: #007AFF !important;
+}
+
+.contact-modal-container p a {
+  color: #0088FF !important;
+}
+
+.contact-modal-container button.btn-custom {
+  background-color: rgba(47, 128, 237, .1) !important;
+  color: #2F80ED !important;
+  border-color: #2F80ED !important;
+  border-radius: 2px !important;
+}

@@ -1,0 +1,11 @@
+.btn-go-back {
+  background-color: #FFFF !important;
+  border: 1px solid #0088FF !important;
+  color: #0088FF !important
+}
+
+ul.list {
+  width: 260px !important;
+  color: #4F4F4F !important;
+  margin-left: 4rem !important;
+}

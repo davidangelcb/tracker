@@ -1,0 +1,22 @@
+.phone-wrapper {
+  border: .7px solid #BDBDBD !important;
+  padding: 3px 10px;
+  border-radius: 0px;
+  gap: 6px;
+  background: white;
+}
+
+.flag-img {
+  width: 24px;
+  height: auto;
+  border-radius: 2px;
+}
+
+.phone-input {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.phone-input:focus {
+  outline: none;
+}

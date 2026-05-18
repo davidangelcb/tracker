@@ -1,0 +1,35 @@
+.cam-perm-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(9, 16, 29, 0.65);
+  z-index: 2600;
+}
+
+.cam-perm-modal {
+  width: 90%;
+  max-width: 420px;
+  color: #4F4F4F;
+}
+
+.cam-perm-modal h5 {
+  color: #241D5D;
+  font-size: 16px;
+}
+
+.cam-perm-modal .btn-close {
+  border: none;
+}
+
+.cam-perm-modal p {
+  color: #333333;
+  font-size: 14px;
+}
+
+.cam-perm-modal ul {
+  padding-left: 1.2rem;
+  color: #4F4F4F !important;
+}
+
+.cam-perm-modal ul li i {
+  color: #241D5D !important;
+}

@@ -1,0 +1,60 @@
+name: Deploy to Vercel (DEV)
+
+env:
+  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID_DEV }}
+  VERCEL_DOMAIN_ALIAS: tracker-dev.pinch.cleaning
+
+on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: "Branch to deploy"
+        required: true
+        default: "main"
+      node-version:
+        description: "Node.js version to use"
+        required: false
+        default: "22"
+
+jobs:
+  deploy-vercel:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.branch }}
+
+      - name: Remove Git History
+        run: rm -rf .git
+
+      - name: Set up Node.js ${{ github.event.inputs.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ github.event.inputs.node-version }}
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Install Vercel CLI
+        run: npm install --global vercel@latest
+
+      - name: Pull Vercel Environment Information
+        run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }} --scope=pinch-dev
+
+      - name: Build Project Artifacts
+        run: npm run build
+
+      - name: Deploy Project Artifacts to Vercel
+        id: deploy
+        run: |
+          URL=$(vercel deploy --prod --token=${{ secrets.VERCEL_TOKEN }} --meta stage=dev --scope=pinch-dev --yes)
+          echo "deployment-url=$URL" >> $GITHUB_OUTPUT
+
+      - name: Alias Deployment to Custom Domain
+        run: |
+          vercel alias set ${{ steps.deploy.outputs.deployment-url }} ${{ env.VERCEL_DOMAIN_ALIAS }} --token=${{ secrets.VERCEL_TOKEN }} --scope=pinch-dev
+
+      - name: Show Deployment URL
+        run: echo "✅ Deployed to ${{ steps.deploy.outputs.deployment-url }} and aliased to https://${{ env.VERCEL_DOMAIN_ALIAS }}"

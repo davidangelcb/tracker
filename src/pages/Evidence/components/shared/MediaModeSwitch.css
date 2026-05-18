@@ -1,0 +1,81 @@
+.media-mode-switch-wrap {
+  position: relative;
+}
+
+/* Outer pill */
+.media-pill {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 150px;
+  height: 56px;
+
+  background: #fff;
+  border: 1px solid #C7C7CC;
+  border-radius: 999px;
+
+  overflow: hidden;
+}
+
+/* Active blue slider = EXACT 50% */
+.media-pill__active {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;                 /* padding interno para que se vea como “capsule” */
+  width: calc(50%);    /* 50% real, considerando el left padding */
+  border-radius: 999px;
+  background: #0088FF;
+  transition: transform 180ms ease;
+  z-index: 0;
+}
+
+/* Left side (Photos) */
+.media-pill.is-photos .media-pill__active {
+  transform: translateX(0);
+}
+
+/* Right side (Video) */
+.media-pill.is-video .media-pill__active {
+  transform: translateX(100%);
+}
+
+/* Buttons */
+.media-pill__btn {
+  position: relative;
+  z-index: 1;
+
+  width: 50%;     /* cada botón ocupa la mitad exacta */
+  height: 100%;
+  border: 0;
+  background: transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Icons */
+.media-pill__btn i {
+  font-size: 22px;
+  color: #6C6C70;
+}
+
+.media-pill__btn.active i {
+  color: #fff;
+}
+
+.media-pill__btn img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+
+.media-pill.is-disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}

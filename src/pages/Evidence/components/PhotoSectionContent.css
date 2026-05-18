@@ -1,0 +1,43 @@
+.thumb-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+  border-radius: 0;
+  border: 1px solid #dee2e6;
+}
+
+.camera-card:hover {
+  background-color: #eef3ff;
+  transition: background-color 0.2s ease;
+}
+
+.thumb-img {
+  object-fit: cover;
+}
+
+::-webkit-scrollbar {
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 3px;
+}
+
+/*
+.photo-section .tabs > div {
+  border-bottom: 1px solid #959595 !important;
+  color: #4F4F4F;
+  font-weight: 400 !important;
+  font-size: 14px;
+}
+
+.photo-section .tabs > div.active {
+  border-bottom: 3px solid #241D5D !important;
+  color: #241D5D;
+  font-weight: 600 !important;
+  font-size: 14px;
+}
+*/

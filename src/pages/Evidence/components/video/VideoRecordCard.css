@@ -1,0 +1,32 @@
+.video-record-card {
+  width: 120px;
+  height: 150px;
+
+  border: 1px solid #0088FF;
+  background-color: #EDF7FF;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition: background-color 0.2s ease;
+}
+
+.video-record-card:hover {
+  background-color: #EDF7FF;
+}
+
+.video-record-icon {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 10px;
+}
+
+.video-record-text {
+  color: #0088FF;
+  font-size: 14px;
+  font-weight: 600;
+}

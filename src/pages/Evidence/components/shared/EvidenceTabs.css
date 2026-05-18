@@ -1,0 +1,13 @@
+.tabs > div {
+  border-bottom: 1px solid #959595 !important;
+  color: #4F4F4F;
+  font-weight: 400 !important;
+  font-size: 14px;
+}
+
+.tabs > div.active {
+  border-bottom: 3px solid #241D5D !important;
+  color: #241D5D;
+  font-weight: 600 !important;
+  font-size: 14px;
+}

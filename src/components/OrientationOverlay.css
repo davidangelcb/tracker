@@ -1,0 +1,22 @@
+/* CSS para orientación de dispositivo */
+
+.orientation-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.95);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.orientation-content {
+  color: #333;
+  font-size: 1.1rem;
+  max-width: 300px;
+  padding: 20px;
+  border-radius: 12px;
+  background: #f8f9fa;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}

@@ -1,0 +1,113 @@
+export default {
+    "notiOff": true,
+    "notiOffStartJob": true,
+    "statusTracker": "active",
+    "statusTrackerDate": "Friday, December 5th, 2025 - 11:10 AM",
+    "id": "6933009fe0bcc4828e063f7f",
+    "propertyName": "Courtyard by Marriott Waterbury Downtown",
+    "propertyLocation": {
+        "city": "Drive Stuart",
+        "state": "FL",
+        "address2": "",
+        "postalCode": "34997",
+        "address1": "534 Glenwood",
+        "geo": {
+            "type": "Point",
+            "coordinates": [
+                -80.232534,
+                27.1713894
+            ]
+        }
+    },
+    "propertyType": "multifamily",
+    "service": "Common Area/Porter Clean",
+    "scheduleDate": "Friday, December 5th, 2025",
+    "number": 4263,
+    "jobStatus": "completed",
+    "unit": "",
+    "tab": "summary",
+    "tags": [
+        {
+            "id": "691dcecff29c95e0c4c94ee7",
+            "title": "Entry Door",
+            "min": {
+                "before": 1,
+                "after": 1
+            },
+            "max": {
+                "before": 5,
+                "after": 5
+            },
+            "beforePhotos": [
+                {
+                    "idPhoto": "693303b798749806ec717c30"
+                },
+                {
+                    "idPhoto": "693303b898749806ec717c31"
+                },
+                {
+                    "idPhoto": "693303b998749806ec717c32"
+                }
+            ],
+            "afterPhotos": [
+                {
+                    "idPhoto": "693303c798749806ec717c33"
+                }
+            ],
+            "required": true,
+            "finish": true
+        },
+        {
+            "id": "691dcf13f29c95e0c4c94eeb",
+            "title": "Others",
+            "min": {
+                "before": 1,
+                "after": 1
+            },
+            "max": {
+                "before": 5,
+                "after": 5
+            },
+            "beforePhotos": [
+                {
+                    "idPhoto": "693303df98749806ec717c38"
+                },
+                {
+                    "idPhoto": "693303e098749806ec717c39"
+                },
+                {
+                    "idPhoto": "693303e198749806ec717c3a"
+                },
+                {
+                    "idPhoto": "693303e298749806ec717c3b"
+                },
+                {
+                    "idPhoto": "693303e398749806ec717c3c"
+                }
+            ],
+            "afterPhotos": [
+                {
+                    "idPhoto": "693303eb98749806ec717c3d"
+                }
+            ],
+            "required": true,
+            "finish": true
+        }
+    ],
+    "startJobInfo": {
+        "lat": 5.2160189,
+        "lon": -74.7325273,
+        "dateUp": "2025-12-05T15:58:29.154Z",
+        "state": "Tolima",
+        "phone": "4078564694",
+        "date": "12/05/2025",
+        "time": "03:58 PM"
+    },
+    "evidence": {
+        "date": "2025-12-05T16:10:23.821Z",
+        "location": {
+            "lat": 5.2160189,
+            "lon": -74.7325273
+        }
+    }
+}

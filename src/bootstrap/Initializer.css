@@ -1,0 +1,29 @@
+.loader-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+}
+
+.loader-wrapper img {
+  width: 120px;
+  height: auto;
+}
+
+.modal-backdrop-custom, .offline-backdrop {
+  position: fixed;
+  inset: 0; /* top: 0; left: 0; right: 0; bottom: 0 */
+  background: rgba(9, 16, 29, .7);
+  z-index: 2000;
+}
+
+.modal-custom {
+  width: 90%;
+  max-width: 420px;
+}
+
+.text-info {
+  color: rgba(230, 134, 0, 1) !important;
+}

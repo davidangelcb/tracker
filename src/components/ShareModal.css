@@ -1,0 +1,96 @@
+.modal-content {
+  border-radius: 0 !important;
+}
+
+/* Asegura que el modal se centre correctamente */
+.modal.show .modal-dialog {
+  margin: auto !important;        /* ayuda en caso de overrides */
+  display: flex !important;       /* fuerza el centrado vertical */
+  align-items: center !important;
+  min-height: calc(100vh - 1rem); /* igual que BS cuando usas centered */
+  padding: initial;
+}
+
+/* Botón de cerrar */
+.share-close-btn {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+  color: #4F4F4F !important;
+}
+
+/* Texto */
+.share-subtitle {
+  font-size: 16px;
+  color: #4F4F4F;
+  margin-bottom: 25px;
+}
+
+/* Fila de botones */
+.share-social-row {
+  display: flex;
+  justify-content: space-around;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+/* Botones sociales */
+.share-social-btn {
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  border: none;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+/* Colores */
+.share-social-btn.sms {
+  background: #5cc44c;
+}
+
+.share-social-btn.whatsapp {
+  background: #22cc68;
+}
+
+.share-social-btn.email {
+  background: #1c1a50;
+}
+
+/* Caja de la URL */
+.share-url-box {
+  display: flex;
+  align-items: center;
+  background-color: #F8F8F8 !important;
+  border: 0.5px solid #BDBDBD;
+  padding: 2px 8px;
+}
+
+/* Input de URL */
+.share-url-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+  background-color: #F8F8F8 !important;
+  border: none !important;
+  color: #4F4F4F;
+}
+
+.share-url-box button {
+  color: #2F80ED !important;
+}
+
+/* Botón copiar */
+.copy-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}

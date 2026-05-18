@@ -1,0 +1,48 @@
+.welcome-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(9, 16, 29, 0.7);
+  z-index: 2500;
+}
+
+.welcome-modal {
+  width: 90%;
+  max-width: 420px;
+  color: #4F4F4F;
+  font-size: 14px;
+}
+
+h4 {
+  color: #241D5D;
+}
+
+h6 {
+  color: #241D5D !important;
+}
+
+.btn-close {
+  border: none;
+}
+
+.dont-show {
+  font-size: 14px !important;
+  color: #09101D !important;
+}
+
+.btn-ok,
+.btn-disabled 
+{
+  border: none !important;
+}
+.btn-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  color: #333 !important;
+}
+
+.custom-check {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  border: 1px solid #8C8C8C !important;
+}

@@ -1,0 +1,134 @@
+.frame-preview-modal .modal-content {
+  background: #000;
+  border: none;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.frame-preview-container {
+  position: relative;
+  background: #000;
+}
+
+.frame-preview-image-stage {
+  position: relative;
+  width: 100%;
+  background: #000;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.frame-preview-image {
+  width: 100%;
+  height: auto;
+  max-height: 82vh;
+  object-fit: contain;
+  display: block;
+}
+
+.frame-preview-overlay-top {
+  z-index: 5;
+  pointer-events: none;
+}
+
+.frame-preview-date-top {
+  width: 100%;
+  text-align: center;
+  background: #253b8e;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 50px;
+  line-height: 1.2;
+}
+
+.frame-preview-tag {
+  align-self: flex-start;
+  background: rgba(79, 79, 79, 0.95);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 16px;
+  line-height: 1.1;
+  max-width: 70%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.frame-preview-close-btn {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 6;
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  border: none;
+  background: rgba(79, 79, 79, 0.9);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.frame-preview-close-btn svg {
+  font-size: 18px;
+}
+
+.frame-preview-bbox {
+  position: absolute;
+  border: 2px solid #1185fe;
+  background: transparent;
+  z-index: 3;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.frame-preview-bbox-label {
+  position: absolute;
+  max-width: 75%;
+  background: #1185fe;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.2;
+  padding: 6px 10px;
+  z-index: 4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  pointer-events: none;
+  box-sizing: border-box;
+}
+
+.frame-preview-footer {
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+  padding: 12px 16px 16px;
+}
+
+.frame-preview-modal .carousel-control-prev,
+.frame-preview-modal .carousel-control-next {
+  width: 12%;
+  opacity: 1;
+}
+
+.frame-preview-modal .carousel-control-prev-icon,
+.frame-preview-modal .carousel-control-next-icon {
+  width: 2.2rem;
+  height: 2.2rem;
+  background-size: 100% 100%;
+}
+
+.transition-fade.hidden {
+  opacity: 0;
+}
+
+.transition-fade.loaded {
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}

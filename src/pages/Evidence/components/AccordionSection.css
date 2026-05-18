@@ -1,0 +1,95 @@
+.accordion .accordion-item {
+  border: none !important;
+  margin-bottom: .6rem;
+  border-radius: 0px !important;
+}
+
+.accordion-button {
+  border-radius: 0px !important;
+  box-shadow: none;
+  font-weight: 500;
+  padding: .875rem .9rem !important
+}
+
+/* Item activo / abierto */
+.accordion-button:not(.collapsed) {
+  color: #007bff !important;
+  background-color: #ffffff !important;
+  border: 1px solid #007bff; 
+}
+
+/* Item inactivo / cerrado */
+.accordion-button.collapsed {
+  color: #8C8C8C;
+  background-color: #F5F5F5;
+  border: 1px solid #F5F5F5;
+}
+
+.accordion .accordion-button::after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='%23C7C7CC' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+.accordion .accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='%230088FF' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+.accordion .accordion-header > button:focus,
+.accordion .accordion-header > button:active
+{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.accordion-body {
+  padding: 0px !important;
+}
+
+.accordion-collapse {
+  transition: height 0.2s ease !important;
+}
+
+.content-form span {
+  color: #4F4F4F !important;
+  font-size: 14px !important;
+  font-weight: 400;
+}
+
+.content-form textarea {
+  border: 1px solid #999999 !important;
+  color: #4F4F4F !important;
+  font-weight: 200 !important;
+}
+
+.bi-check-circle {
+  color: #23A756 !important;
+}
+
+.spinner-thin {
+  transform-origin: center;
+  color: #c7c7cc !important;
+}
+
+/* 
+ACCORDION WARNING (REQUIRED NOT DONE)
+*/
+
+.accordion-warning .accordion-button.collapsed {
+  background-color: rgba(255, 244, 211, .3) !important;
+  border: 1px solid #ffc107 !important;
+}
+
+.accordion-warning .accordion-button:not(.collapsed) {
+  background-color: rgba(255, 244, 211, .3) !important;
+  border: 1px solid #ffc107 !important;
+}
+
+.accordion-warning .accordion-button {
+  border-left: 4px solid #ffc107 !important;
+}
+
+/* --------------------------------------------------
+ * Persiana requerida, no completada y abierta
+ * -------------------------------------------------- */
+.accordion-warning .accordion-button:not(.collapsed) {
+  color: #8C8C8C !important;
+}

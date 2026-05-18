@@ -1,0 +1,15 @@
+h4 {
+  color: #241D5D;
+}
+
+h6 {
+  color: #241D5D !important;
+}
+
+.modal {
+  z-index: 200000 !important;
+}
+
+.modal-backdrop {
+  z-index: 199999 !important;
+}

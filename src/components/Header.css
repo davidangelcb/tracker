@@ -1,0 +1,30 @@
+.header-top {
+    font-size: 14px;
+}
+
+.header-top .tracking span{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.header-status {
+    background: #F6F6F6 !important;
+}
+
+.header-status .status {
+    margin-left: 0.5rem;
+    font-weight: 700;
+    background-color: #EEF2FA;
+    padding: 4px 10px;
+}
+
+.header-status .in-progress {
+    color: #1B3486 !important;
+    background-color: #E2E9FB !important;
+}
+
+.header-status .support {
+    color: #241D5D;
+    font-size: 14px !important;
+    margin-left: 0.5rem;
+}

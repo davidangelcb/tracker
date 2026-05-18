@@ -1,0 +1,132 @@
+.date-rage {
+  line-height: normal;
+}
+
+.date-rage p strong {
+  color: #333333;
+  font-weight: 600;
+}
+
+.section-category-title {
+  font-weight: 500;
+  padding: 5px;
+  color: #fff;
+  background-color: #4F4F4F;
+}
+
+.section-title {
+  font-weight: 500;
+  color: #241D5D;
+  margin-bottom: 0.8rem;
+}
+
+.photo-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding-bottom: 0.5rem;
+  scroll-snap-type: x mandatory;
+}
+
+.photo-card {
+  flex: 0 0 auto;
+  width: 120px;
+  border-radius: 0px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  scroll-snap-align: start;
+}
+
+.photo-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.date-label {
+  background: #1B3486;
+  color: #fff;
+  font-size: 7px !important;
+  text-align: center;
+  padding: 0.3rem 0;
+}
+
+.pdf-btn {
+  background-color: #0088FF;
+  color: white;
+  border-radius: 6px;
+  padding: 0.4rem 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 14px;
+  border-style: none !important;
+}
+
+.pdf-btn i {
+  margin-right: 0.5rem;
+}
+
+.info-box {
+  background: #D5EBFF;
+  border-radius: 3px;
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 14px;
+}
+
+.info-box i {
+  font-size: 1.4rem;
+  color: #1d1d5a;
+  flex-shrink: 0;
+}
+
+.info-box a {
+  color: #1d65d8;
+  text-decoration: none;
+}
+
+.info-box strong {
+  font-weight: normal;
+}
+
+.placeholder-glow .placeholder {
+  background-color: #c4c4c4 !important;
+}
+
+.photo-overlay {
+  z-index: 3;
+  width: 100%;
+}
+
+/* FECHA: ancho completo */
+.photo-date-top {
+  width: 100%;
+  background: #1B3486;
+  color: #ffffff;
+  font-size: 7px;
+  padding: 2px 6px;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* TAG: ancho según texto */
+.photo-tag {
+  align-self: flex-start;   /* 👈 CLAVE */
+  background: rgba(79, 79, 79, 1);
+  color: #ffffff;
+  font-size: 7px;
+  padding: 2px 6px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.contact-info p span {
+  color: #007AFF !important;
+}
+
+.contact-info p a {
+  color: #0088FF !important;
+}
